@@ -1,0 +1,48 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="tpb.css">
+<script type="text/javascript" src="tpb.js"></script>
+
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+hello!
+
+<div ng-app="boggle" id="boggle" class="container">
+  <boggle-board>
+    <div ng-click="shake()">
+      <div class="row" ng-repeat="ro in r track by $index">
+        <div class="holder" ng-repeat="co in ro.c track by $index">
+          <div class="dice" id="letter{{ro.i}}{{$index}}">
+            <span>{{co}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+ <h1 ng-if="foundWords.length == 0">mi lukin e nimi ala</h1>
+    <div ng-if="foundWords.length">
+    <div ng-if="!bbCtrl.showme">
+      <div class="btn btn-lg btn-info btn-block animated slideInRight" ng-click="bbCtrl.showme = true">Open ({{foundWords.length}})
+      </div>
+    </div>
+    <div class="row" ng-if="bbCtrl.showme">
+      <div class="col-xs-4" ng-repeat="w in foundWords">
+      <div class="answer animated zoomIn" ng-click="highlight(w.locs)">
+        <span class="start">{{w.word[0]}}</span><span class="follow">{{w.word.slice(1)}}</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </boggle-board>
+</div>
+<br/>
+<br/>
+</body>
+<html>

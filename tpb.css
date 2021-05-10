@@ -1,0 +1,60 @@
+#boggle{
+  display:none;
+  width: 80vw;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.holder{
+  width: 20%;
+  max-width: 120px;
+  float: left;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+.dice{
+  font-size: 6vmin;
+  text-align: center;
+  height: 2em;
+  width: 100%;
+  line-height: 2em;
+  transition: 0.2s ease all;
+}
+
+.dice span{
+  display:none;
+}
+
+
+.follow{
+  color: #63A9AB;
+}
+.highlight{
+  background: #63A9AB;
+  color:white;
+}
+
+.answer{
+  text-align:center;
+  font-size: 32px;
+  border: 3px solid #ccc;
+  margin: 3px 0;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.answer:hover{
+  background: #eee;
+}
+
+.start{
+  color: #4cae4c;
+  font-weight: bold;
+}
+.highlight.first{
+  background: #4cae4c;
+  color: white;
+}
+
+h1{
+  text-align:center;
+}

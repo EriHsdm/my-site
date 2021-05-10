@@ -1,0 +1,202 @@
+/*---------------------------------------------
+2019.05.22
+http://hashidumeeri.html.xdomain.jp/
+default.css
+äÓñ{ìIÇ»éwíË
+  ---------------------------------------------*/
+
+
+/*---------------------------------------------
+	Browser Default Initialization
+  ---------------------------------------------*/
+
+html {
+	overflow-y: scroll;
+}
+
+body, div, dl, dt, dd, ul, ul li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td,
+section, nav, article, aside, hgroup, header, address,
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th {
+	text-align: left;
+}
+q:before ,q:after {
+	content: '';
+}
+object, embed {
+	vertical-align: top;
+}
+hr, legend {
+	display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+img, abbr, acronym, fieldset {
+	border: 0;
+}
+img {
+	vertical-align: bottom;
+	-ms-interpolation-mode: bicubic;
+}
+ul li {
+	list-style-type: none;
+}
+
+
+
+/*---------------------------------------------
+	Font
+  ---------------------------------------------*/
+
+/* ------ Yu Gothic ------ */
+
+@font-face {
+	font-family: "Osaka,Meiryo UI";
+	font-weight: normal;
+	src: local("YuGothic-Medium"),	/* Postscript name */
+	     local("Yu Gothic"),	/* for Chrome */
+	     local("YuGothic-Regular");
+}
+@font-face {
+	font-family: "Osaka,Meiryo UI";
+	font-weight: 500;
+	src: local("YuGothic-Medium"),	/* Postscript name */
+	     local("Yu Gothic"),	/* for Chrome */
+	     local("YuGothic-Regular");
+}
+@font-face {
+	font-family: "Osaka,Meiryo UI";
+	font-weight: bold;
+	src: local("YuGothic-Bold"),	/* Postscript name */
+	     local("Yu Gothic");	/* for Chrome */
+}
+
+
+
+/*---------------------------------------------
+	body
+  ---------------------------------------------*/
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Osaka,Meiryo UI", MyYuGothicM, Meiryo, sans-serif;
+	color: #000;
+	font-size: 12px;
+	line-height: 160%;
+	text-align: left;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	background-color:#000;
+}
+
+
+
+/*---------------------------------------------
+	Anchor
+Settings not specified
+  ---------------------------------------------*/
+
+a {
+	outline: none;
+}
+
+a:link {
+	text-decoration: underline;
+	color: #0af;
+}
+a:visited {
+	text-decoration: underline;
+	color: #0af;
+}
+a:hover {
+	text-decoration: none;
+	color: #0af;
+}
+a:active {
+	text-decoration: none;
+	color: #0af;
+}
+
+
+
+/*---------------------------------------------
+	Table
+Settings not specified
+  ---------------------------------------------*/
+
+table.eee{
+	background: url(sunset.jpg);
+}
+
+table,td,th,tr{
+	font-size: 12px;
+	color:fff;
+	text-align: left;
+	border: 0px #808080 solid;
+	border-collapse: collapse;
+	border-color: #000;
+	padding: 0px;
+}
+
+
+
+/*---------------------------------------------
+	Clearfix
+  ---------------------------------------------*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+/*ÂÖ®‰Ω?*/
+.hidden_box {
+    margin: 2em 0;/*ÂâçÂæå„?‰ΩôÁôΩ*/
+    padding: 0;
+}
+
+/*„Éú„Çø„É≥Ë£?£æ*/
+.hidden_box label {
+    font-weight: bold;
+    cursor :pointer;
+}
+
+/*„ÉÅ„Çß„É?ÇØ„ÅØË¶ã„Åà„Å™„Åè„Åô„Ç?*/
+.hidden_box input {
+    display: none;
+}
+
+/*‰∏≠Ë∫´„ÇíÈùûË°®Á§∫„Å´„Åó„Å¶„Åä„Åè*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*„ÇØ„É™„É?ÇØ„Åß‰∏≠Ë∫´Ë°®Á§∫*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
